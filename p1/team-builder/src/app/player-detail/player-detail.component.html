@@ -1,0 +1,27 @@
+<div class="form-style-1">
+    <div>
+        <label class="add">Name:&nbsp;<input type="text" size="13" #playerName id="player" maxlength="14" pattern="[A-Za-z]"
+                title="Únicamente letras" [(ngModel)]="player.name" />
+        </label> <br> <br>
+        <label class="add">Dorsal:&nbsp;<input type="number" size="10" #playerDorsal id="player" (change)="numbersOnly(playerDorsal.value)"
+                title="Únicamente números" [(ngModel)]="player.dorsal" />
+        </label><br> <br>
+        <table>
+            <tr>
+                <td>Position:</td>
+                <td>
+                        <input type="radio" value="Portero" id="playerP" [(ngModel)]="player.position"> Portero <br>
+                        <input type="radio" value="Defensa" id="playerP" [(ngModel)]="player.position"> Defensa <br>
+                        <input type="radio" value="Medio" id="playerP" [(ngModel)]="player.position"> Medio <br>
+                        <input type="radio" value="Delantero" id="playerP" [(ngModel)]="player.position"> Delantero<br>
+                  
+                </td>
+            </tr>
+        </table><br> <br>
+        <button (click)="save()">
+            Save
+        </button>&nbsp;
+        <button (click)="goBack()">Back</button>
+    
+    </div>
+    </div>

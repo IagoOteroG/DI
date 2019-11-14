@@ -1,0 +1,45 @@
+
+  .fa {
+    font-size:36px;
+  }
+  .mensages{
+    width: 49%;
+    float: left;
+  }
+  p{
+    margin-bottom: 0;
+    margin-top: 2px;
+    margin-right: 10px;
+  }
+  footer{
+    position: absolute;
+    width: 100%;
+    background:rgb(242, 243, 245);
+    bottom: 0;
+  }
+  .information{
+    width: 49%;
+    float: right;
+    text-align: right;
+    padding: 0.5%;
+    
+  }
+  #wrapper{
+    position: relative;
+    height: 65px;
+}
+.contenedor{
+    max-width: 1000px;
+    margin: 0px auto;
+    overflow: hidden;
+    max-width: 1280px !important;
+}
+p{
+  text-align: right;
+}
+
+.barrasubebaja{
+  height: 70px;
+  overflow-y: auto;
+
+}

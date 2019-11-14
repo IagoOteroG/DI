@@ -1,0 +1,49 @@
+.form-style-1 {
+	margin:10px auto;
+	max-width: 400px;
+	padding: 20px 12px 10px 20px;
+	font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+.form-style-1 label{
+	margin:0 0 3px 0;
+	padding:0px;
+	display:block;
+    font-weight: bold;	
+    padding: 0;
+	display: block;
+	list-style: none;
+    margin: 10px 0 0 0;
+    
+}
+table{
+    margin:0 0 3px 0;
+	padding:0px;
+	display:block;
+    font-weight: bold;	
+    padding: 0;
+	display: block;
+	list-style: none;
+	margin: 10px 0 0 0;
+}
+button{
+    padding: 0;
+	display: inline-box;
+	list-style: none;
+    margin: 10px 0 0 0;
+    background: #4B99AD;
+	padding: 8px 15px 8px 15px;
+	border: none;
+	color: #fff;
+}
+button:visited, a:link {
+    color: #334953;
+  }
+  button:hover {
+    color: #039be5;
+    background-color: #cfd8dc;
+  }
+.add{
+
+        width: 100px;
+      
+}
