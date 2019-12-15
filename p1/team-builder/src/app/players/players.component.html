@@ -12,12 +12,16 @@
 <h3>Team Players</h3>
 
 <div>
-    <button routerLink= "/player-add">Add Player 
+    <label>Player name:
+      <input #playerName />
+    </label>
+    <!-- (click) passes input value to add() and then clears the input -->
+    <button (click)="add(playerName.value); playerName.value=''">
+      add
     </button>
 </div>
 
 <ul class="players">
-    <div class="barrasubebaja">
     <li *ngFor="let player of players">
     <!--
     [class.selected]="player === selectedPlayer"
@@ -30,10 +34,9 @@
     <button class="delete" title="delete player"
   (click)="delete(player)">x</button>
     </li>
-</div>
 </ul>
 
-
+<app-player-detail [player]="selectedPlayer"></app-player-detail>
 
 <!--
     ***Now all of this will go to Players-detail component***

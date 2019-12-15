@@ -10,11 +10,7 @@ h1 {
     font-weight: lighter;
   }
   body {
-    
-    box-sizing: border-box;
-    word-wrap: break-word;
-    font-family: 'Open Sans', sans-serif;
-    margin: 0px;
+    margin: 2em;
   }
   body, input[type="text"], button {
     color: #333;
@@ -23,11 +19,4 @@ h1 {
   /* everywhere else */
   * {
     font-family: Arial, Helvetica, sans-serif;
-  }.fondoblanco{
-    background-color:
-#fff !important;
-
-   
-border-radius: 4px !important;
-border: none !important;
   }

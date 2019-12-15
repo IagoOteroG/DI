@@ -94,21 +94,15 @@ export class PlayerService {
   }
 
   /* GET heroes whose name contains search term */
-  searchPlayers(term: number): Observable<Player[]> {
-    if (!term) {
+  searchPlayers(term: string): Observable<Player[]> {
+    if (!term.trim()) {
       // if not search term, return empty hero array.
       return of([]);
-    } else if (isNaN(term)) {
-      return this.http.get<Player[]>(`${this.playersUrl}/?name=${term}`).pipe(
-        tap(_=> this.log(`found players matching "${term}"`)),
-        catchError(this.handleError<Player[]>('searchPlayers', []))
-      );
-    } else if (isNaN(term) == false) {
-      return this.http.get<Player[]>(`${this.playersUrl}/?dorsal=${term}`).pipe(
-        tap(_=> this.log(`found players matching "${term}"`)),
-        catchError(this.handleError<Player[]>('searchPlayers', []))
-      );
     }
+    return this.http.get<Player[]>(`${this.playersUrl}/?name=${term}`).pipe(
+      tap(_ => this.log(`found players matching "${term}"`)),
+      catchError(this.handleError<Player[]>('searchPlayers', []))
+    );
   }
 
   /** Log a PlayerService message with the MessageService */

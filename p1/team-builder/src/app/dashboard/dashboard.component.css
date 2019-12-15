@@ -2,7 +2,6 @@
 [class*='col-'] {
     float: left;
     padding-right: 20px;
-    padding-left: 20px;
     padding-bottom: 20px;
   }
   [class*='col-']:last-of-type {
@@ -16,12 +15,6 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
-  #A{
-    margin-bottom: 420px ;
-    
-}
-  
-
   h3 {
     text-align: center;
     margin-bottom: 0;

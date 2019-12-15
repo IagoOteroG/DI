@@ -14,8 +14,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService }  from './in-memory-data.service';
 import { PlayerSearchComponent } from './player-search/player-search.component';
-import { FooterComponent } from './footer/footer.component';
-import { PlayerAddComponent } from './player-add/player-add.component';
 
 @NgModule({
   declarations: [
@@ -24,9 +22,7 @@ import { PlayerAddComponent } from './player-add/player-add.component';
     PlayerDetailComponent,
     MessagesComponent,
     DashboardComponent,
-    PlayerSearchComponent,
-    FooterComponent,
-    PlayerAddComponent
+    PlayerSearchComponent
   ],
   imports: [
     BrowserModule,

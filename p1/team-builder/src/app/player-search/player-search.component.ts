@@ -16,13 +16,12 @@ import { PlayerService } from '../player.service';
 })
 export class PlayerSearchComponent implements OnInit {
   players$: Observable<Player[]>;
-  private searchTerms = new Subject<any>();
-  
+  private searchTerms = new Subject<string>();
 
   constructor(private playerService: PlayerService) {}
 
   // Push a search term into the observable stream.
-  search(term: number): void {
+  search(term: string): void {
     this.searchTerms.next(term);
   }
 
@@ -35,7 +34,7 @@ export class PlayerSearchComponent implements OnInit {
       distinctUntilChanged(),
 
       // switch to new search observable each time the term changes
-      switchMap((term: number) => this.playerService.searchPlayers(term)),
+      switchMap((term: string) => this.playerService.searchPlayers(term)),
     );
   }
 }

@@ -74,19 +74,3 @@
     background-color: gray !important;
     color: white;
   }
-  div{
-    margin-left: 50px;
-    
-  }
-  h3{
-    margin-left: 6px;
-  }
-  .barrasubebaja{
-    margin-top: 10px;
-    height: auto;
-    width: 250px;
-    overflow-x:hidden ;
-    overflow-y: auto;
-  
-  }
-  

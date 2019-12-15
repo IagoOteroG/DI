@@ -1,0 +1,21 @@
+  
+ <div class="form-style-1">
+     <form novalidate [formGroup]="user">
+            <label class="add">Name:&nbsp;<input formControlName="nombre" type="text" size="13" #playerName id="player"
+                    title="Únicamente letras"/>
+            </label> <br>
+            <label class="add">Dorsal:&nbsp;<input formControlName="dorsal" type="number" size="10" #playerDorsal id="player" (change)="numbersOnly(playerDorsal.value)"
+                    title="Únicamente números" />
+            </label><br> <br>
+                    <mat-radio-group name="opciones" [(ngModel)]="Position" [ngModelOptions]="{standalone:true}">
+                        <mat-radio-button *ngFor="let op of tipoOperaciones" name="opciones" [value]="op"  style="margin: 10px">
+                          {{op}}
+                        </mat-radio-button>
+                      </mat-radio-group>
+       <br> <br>
+       <button mat-raised-button  type="submit" [disabled]="user.invalid" (click)="add(playerName.value, playerDorsal.value, Position.value)">
+            Save</button>
+        &nbsp;
+        <button class="butt" (click)="goBack()">Back</button>
+    </form>
+    </div>

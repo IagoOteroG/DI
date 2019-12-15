@@ -3,7 +3,9 @@ import { Player } from '../player';
 import { PlayerService } from '../player.service';
 import { Location } from '@angular/common';
 import { FormsModule } from '@angular/forms'
-
+import { AppComponent } from '../app.component'
+import { ReactiveFormsModule } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-player-add',
@@ -14,17 +16,31 @@ export class PlayerAddComponent implements OnInit {
 
   players: Player[];
   Position="delantero";
+  user:FormGroup;
 
   constructor(private playerService: PlayerService, 
-    private location: Location) { }
+    private location: Location) {AppComponent.hide()}
 
   ngOnInit() {
     this.getPlayers();
+    this.user = new FormGroup({ 
+    nombre: new FormControl('', [Validators.required, Validators.minLength(2), Validators.maxLength(16)]),  
+    dorsal: new FormControl('', [Validators.required, Validators.maxLength(2),Validators.minLength(1) ]),   
+    });
   }
+  operacionSeleccionada: string = 'Portero';
+  tipoOperaciones = [
+    'Portero',
+    'Defensa',
+    'Medio',
+    'Delantero',
+  ];
+ 
 
   getPlayers(): void {
     this.playerService.getPlayers().subscribe(players => this.players = players);
   }
+  
 
   add(name: string, dorsal:number, position:string): void {
     name = name.trim();

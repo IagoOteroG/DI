@@ -1,0 +1,15 @@
+<h1>{{title}}</h1>
+<nav mat-tab-nav-bar>
+  <a mat-tab-link routerLink="/homeComponent">Home</a>
+  <a mat-tab-link routerLink="/dashboard">Dashboard</a>
+  <a mat-tab-link routerLink="/players">Players</a>
+  <div class="topnav-right">
+    <div *ngIf="Bool" class="input">
+      <app-player-search></app-player-search>
+    </div>
+  </div>
+
+
+</nav>
+<router-outlet></router-outlet>
+<app-footer></app-footer>

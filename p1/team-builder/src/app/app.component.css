@@ -1,6 +1,5 @@
 /* AppComponent's private CSS styles */
-h1 { 
-    padding-left: 25px;
+h1 {
     font-size: 1.2em;
     margin-bottom: 0;
   }
@@ -10,26 +9,13 @@ h1 {
     padding-top: 0;
   }
   nav a {
-    margin-bottom: 7px;
     padding: 5px 10px;
-    margin-left: 0.8%;
     text-decoration: none;
     margin-top: 10px;
     display: inline-block;
-    background-color: rgb(255, 255, 255);
+    background-color: #eee;
     border-radius: 4px;
   }
-  .topnav-right {
-    padding-bottom: 3px;
-    float: right;
-    margin-right: 10px;
-    text-decoration: none;    
-    margin-top: 7px;
-    
-    border-radius: 4px;
-
-  }
-  
   nav a:visited, a:link {
     color: #334953;
   }
@@ -39,11 +25,4 @@ h1 {
   }
   nav a.active {
     color: #039be5;
-  }
-  nav{
-    background-color: burlywood;
-    margin-top: 1%;
-  }
-  .input{
-  margin-bottom:6px;
   }

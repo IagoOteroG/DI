@@ -1,0 +1,49 @@
+/* AppComponent's private CSS styles */
+h1 { 
+    padding-left: 25px;
+    font-size: 1.2em;
+    margin-bottom: 0;
+  }
+  h2 {
+    font-size: 2em;
+    margin-top: 0;
+    padding-top: 0;
+  }
+  nav a {
+    margin-bottom: 7px;
+    padding: 5px 10px;
+    margin-left: 0.8%;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+  }
+  .topnav-right {
+    padding-bottom: 3px;
+    float: right;
+    margin-right: 10px;
+    text-decoration: none;    
+    margin-top: 7px;
+    
+    border-radius: 4px;
+
+  }
+  
+  nav a:visited, a:link {
+    color: #334953;
+  }
+  nav a:hover {
+    color: #039be5;
+    background-color: #cfd8dc;
+  }
+  nav a.active {
+    color: #039be5;
+  }
+  nav{
+    background-color: burlywood;
+    margin-top: 1%;
+  }
+  .input{
+  margin-bottom:6px;
+  }
