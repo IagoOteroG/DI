@@ -16,10 +16,35 @@
   z-index: 1;
 }
 
+
+
 @media (min-width: 415px) {
 .mat-sidenav{
   display: none;
 }
 
-
 }
+@media (max-width: 415px) {
+  .dib{
+    display: none;
+  }
+  .sidenav{
+    padding-left: 1%;
+  }
+  .toolb{
+    display: block;
+    padding: 4px 6px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 13px;
+    margin-top: auto;
+    clear:both;
+    line-height: 43px;
+  }
+  .derecha{
+    float: right;
+    padding-right: 6%;
+  }
+  
+  }
+  
+ 

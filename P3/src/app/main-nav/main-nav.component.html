@@ -4,19 +4,19 @@
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
       [opened]="(isHandset$ | async) === false">
     <mat-toolbar>Menu</mat-toolbar>
-    <mat-nav-list>
-      <a mat-list-item href="#">Link 1</a>
-      <a mat-list-item href="#">Link 2</a>
-      <a mat-list-item href="#">Link 3</a>
+    <mat-nav-list >
+      <a mat-list-item mat-tab-link routerLink="home">Home</a>
+      <a mat-tab-link mat-list-item routerLink="catalog">Catalog</a>
+      <a mat-tab-link mat-list-item routerLink="whoweare">Who we Are?</a>
+      <a mat-tab-link mat-list-item routerLink="whereweare">Where we are?</a>
+      <a mat-tab-link mat-list-item routerLink="contactus">Contact us?</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
     
-    <mat-toolbar color="primary">
-      <div>
-        <a mat-tab-link routerLink="home">Home loko</a>
-        <a mat-tab-link="ca">Link 1</a>
-        <a mat-tab-link="#">Link 1</a>
+    <mat-toolbar class=toolb color="warn">
+      <div class="dib" >
+        <a mat-tab-link routerLink="home">Home</a>
       </div>
      
       <button
@@ -27,7 +27,7 @@
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span>P3</span>
+      <span class="derecha">P3</span>
     </mat-toolbar>
    <router-outlet></router-outlet>
   </mat-sidenav-content>
