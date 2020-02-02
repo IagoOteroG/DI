@@ -7,7 +7,7 @@ import { WhoweareComponent } from './whoweare/whoweare.component';
 import { CatalogComponent } from './catalog/catalog.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/homeComponent', pathMatch: 'full' },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'catalog', component: CatalogComponent  },
   { path: 'whoweare', component: WhoweareComponent  },
   { path: 'whereweare', component: WhereweareComponent  },
