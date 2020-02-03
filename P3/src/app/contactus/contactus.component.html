@@ -1,1 +1,24 @@
-
+<div class="container">
+    <mat-form-field>
+      <input matInput placeholder="Nombre">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Primer Apellido">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Segundo Apellido">
+    </mat-form-field>
+    
+  
+    <mat-form-field>
+      <input matInput placeholder="Email" [formControl]="email" required>
+      <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+    </mat-form-field>
+  
+    <mat-form-field>
+      <mat-select placeholder="¿Desea recibir publicidad?">
+        <mat-option value="option">Option</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+  

@@ -1,3 +1,5 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <mat-sidenav-container class="sidenav-container">
   <mat-sidenav #drawer class="sidenav" fixedInViewport
       [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
@@ -17,6 +19,10 @@
     <mat-toolbar class=toolb color="warn">
       <div class="dib" >
         <a mat-tab-link routerLink="home">Home</a>
+        <a mat-tab-link  routerLink="catalog">Catalog</a>
+        <a mat-tab-link  routerLink="whoweare">Who we Are?</a>
+        <a mat-tab-link  routerLink="whereweare">Where we are?</a>
+        <a mat-tab-link routerLink="contactus">Contact us?</a>
       </div>
      
       <button
@@ -27,7 +33,9 @@
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span class="derecha">P3</span>
+      <a class="derecha" href="https://github.com/Iago98">
+        <i style="font-size:24px" class="fa">&#xf09b;</i>
+      </a>
     </mat-toolbar>
    <router-outlet></router-outlet>
   </mat-sidenav-content>
