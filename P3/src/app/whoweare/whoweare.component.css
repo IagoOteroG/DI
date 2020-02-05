@@ -1,4 +1,11 @@
-.main {}
+.main {
+    background-color: moccasin;
+    background-image: url('C:\Users\Iago\Desktop\background.jpg');
+    height: 150%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
 
 .top {
     text-align: center;
@@ -11,10 +18,7 @@
     padding-bottom: 3rem;
     margin-left: auto;
     margin-right: auto;
-    background-image: url('C:\Users\Iago\Desktop\AdobeStock_100000042-e1563305717660-686x371.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    background-size: initial;
 }
 
 .top h1 {
@@ -27,19 +31,25 @@
     line-height: 18px;
     font-weight: 400;
     color: #fff;
-    position: relative
+    position: relative;
 }
 
-.fondo::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.6);
+.carta {
+    padding: 15px;
+    margin-bottom: 3px;
+    background: #fff;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #888;
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    margin-right: 10%;
+    margin-left: 10%;
+    text-align: center;
 }
 
-.carta {}
-
-.cuerpo {}
+.cuerpo {
+    margin-top: 5px;
+    margin-right: 10%;
+    margin-left: 10%;
+}

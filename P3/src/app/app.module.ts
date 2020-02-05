@@ -22,6 +22,9 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatSelectModule} from '@angular/material/select';
 import {MatInputModule} from '@angular/material';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { MatSliderModule } from '@angular/material/slider';
+
+
 
 
 
@@ -51,7 +54,9 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
     MatSelectModule,
     MatInputModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatSliderModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

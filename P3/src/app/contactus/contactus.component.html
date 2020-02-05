@@ -43,6 +43,9 @@
             <label *ngIf="form.get('email').hasError('email')&&form.get('email').touched">
               Obligatorio
             </label>
+            <label *ngIf="form.get('email').hasError('required')&&form.get('email').touched">
+              Obligatorio
+            </label>
         </mat-form-field>
         <div>
             <form class="button" novalidate (ngSubmit)="onSubmit(name.value, apellido.value, sapellido.value, textarea.value, email.value)" [formGroup]="form">

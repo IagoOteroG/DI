@@ -10,7 +10,7 @@ export class ServiceComponentContactusService {
 
   add(contac: contactMessage) {
 
-    var contactmessage = "name:" + contac.name + "apellido" + contac.apellido + "sapellido" + contac.sapellido + "textarea" + contac.textarea + "email" + contac.email;
+    var contactmessage = "name:|" + contac.name + "|apellido|" + contac.apellido + "|sapellido|" + contac.sapellido + "|textarea|" + contac.textarea + "|email|" + contac.email;
 
     this.contacts.push(contactmessage);
     console.log(this.contacts);
