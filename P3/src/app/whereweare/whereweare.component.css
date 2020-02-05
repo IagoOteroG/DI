@@ -1,7 +1,12 @@
-.mat-grid-tile{
+.mat-grid-tile {
     background-color: lightblue;
 }
-div{
-    margin-top: 1%;
 
+div {
+    margin-top: 1%;
+}
+
+.mapa {
+    margin-left: 5%;
+    width: 90%;
 }

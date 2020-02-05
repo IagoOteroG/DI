@@ -1,0 +1,45 @@
+.main {}
+
+.top {
+    text-align: center;
+    color: #fff;
+    font-family: Montserrat, sans-serif;
+    margin-bottom: 4px;
+    line-height: 1.1;
+    max-width: 1140px;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url('C:\Users\Iago\Desktop\AdobeStock_100000042-e1563305717660-686x371.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.top h1 {
+    font-size: 2.571rem;
+    color: #fff;
+    position: relative
+}
+
+.top p {
+    line-height: 18px;
+    font-weight: 400;
+    color: #fff;
+    position: relative
+}
+
+.fondo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.carta {}
+
+.cuerpo {}

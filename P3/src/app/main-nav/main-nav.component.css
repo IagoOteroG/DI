@@ -1,64 +1,67 @@
 .sidenav-container {
-  height: 100%;
+    height: 100%;
 }
 
 .sidenav {
-  width: 200px;
+    width: 200px;
 }
 
 .sidenav .mat-toolbar {
-  background: inherit;
+    background: inherit;
 }
 
 .mat-toolbar.mat-primary {
-  position: sticky;
-  top: 0;
-  z-index: 1;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
-.dib{
-  margin-left: 2px;
-}
-.dib a{
-  margin-left: 6px;
-  margin-right: 6px;
-  color:white;
 
-text-decoration: none;
+.dib {
+    margin-left: 2px;
 }
+
+.dib a {
+    margin-left: 6px;
+    margin-right: 6px;
+    color: white;
+    text-decoration: none;
+}
+
 
 /* Muestra por debajo de: */
+
 @media (min-width: 415px) {
-  .mat-sidenav{
-    display: none;
-
-}
-}
- /* Muestra por encima de: */
-@media (max-width: 415px) {
-  .dib a {
-    display: none;
+    .mat-sidenav {
+        display: none;
     }
-
+    .hamb {
+        display: none;
+    }
 }
 
-  .sidenav{
+
+/* Muestra por encima de: */
+
+@media (max-width: 415px) {
+    .dib a {
+        display: none;
+    }
+}
+
+.sidenav {
     padding-left: 1%;
-  }
-  .toolb{
-    
+}
+
+.toolb {
     padding: 4px 6px;
     color: rgb(255, 255, 255);
     margin-bottom: 13px;
     margin-top: auto;
-    clear:both;
+    clear: both;
     line-height: 43px;
-   
-  }
-.derecha{
-  position: absolute;
-  right: 2%;
 }
-  
-  
-  
-  
+
+.derecha {
+    position: absolute;
+    right: 2%;
+}
