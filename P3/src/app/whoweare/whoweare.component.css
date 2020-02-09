@@ -1,10 +1,11 @@
 .main {
     background-color: moccasin;
-    background-image: url('C:\Users\Iago\Desktop\background.jpg');
+    background-image: url('background.jpg');
     height: 150%;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    height: auto;
 }
 
 .top {

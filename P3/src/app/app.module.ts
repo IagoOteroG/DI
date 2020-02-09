@@ -23,6 +23,12 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatInputModule} from '@angular/material';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { MatSliderModule } from '@angular/material/slider';
+import { FooterComponent } from './footer/footer.component';
+import { FooterSComponent } from './footer-s/footer-s.component';
+import {MatPaginatorModule} from '@angular/material/paginator'; 
+import {MatTableModule} from '@angular/material/table';
+import { ArtDetailComponent } from './art-detail/art-detail.component'; 
+
 
 
 
@@ -36,7 +42,10 @@ import { MatSliderModule } from '@angular/material/slider';
     WhereweareComponent,
     CatalogComponent,
     ContactusComponent,
-    MainNavComponent
+    MainNavComponent,
+    FooterComponent,
+    FooterSComponent,
+    ArtDetailComponent
   ],
   imports: [
     BrowserModule,
@@ -55,7 +64,9 @@ import { MatSliderModule } from '@angular/material/slider';
     MatInputModule,
     FormsModule,
     ReactiveFormsModule,
-    MatSliderModule
+    MatSliderModule,
+    MatPaginatorModule,
+    MatTableModule
     
   ],
   providers: [],

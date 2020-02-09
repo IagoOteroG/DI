@@ -1,0 +1,17 @@
+table {
+    width: 100%;
+}
+
+@media (min-width: 415px) {
+    table {
+        width: 40%;
+        margin-left: 30%;
+    }
+}
+
+@media (max-width: 415px) {
+    .foto {
+        width: 104px;
+        height: 142px;
+    }
+}
