@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">EntrenamientoMaterial</string>
+    <string name="vMedia">Average Speed</string>
+    <string name="velocidadMedia">Total Time</string>
+    <string name="title_activity_transition_add">Add Training</string>
+    <string name="segundos">Seconds</string>
+    <string name="piscinaMedia">Median Pool</string>
+    <string name="piscinaGrande">Big Pool</string>
+    <string name="nombre_entre">Name Train.</string>
+    <string name="nombre">Name</string>
+    <string name="nEntrenamientos">Training Numbers</string>
+    <string name="nacionalidad">Nationality</string>
+    <string name="modificar">Modify</string>
+    <string name="minutos">Minutes</string>
+    <string name="metros">Metres</string>
+    <string name="kilometros">Kilometres</string>
+    <string name="horas">Hours</string>
+    <string name="hmseg">hours/minutes/seconds</string>
+    <string name="fecha">Date</string>
+    <string name="estats">Estatistics</string>
+    <string name="estadisticas">Estatistics</string>
+    <string name="entrenamientoNuevo">New Training</string>
+    <string name="eliminar">Delete</string>
+    <string name="edad">Age</string>
+    <string name="distTotal">Total Distance</string>
+    <string name="distancia">Distance</string>
+    <string name="delete_button">Delete</string>
+    <string name="configuracion">Settings</string>
+    <string name="changeNationality">Change Nationality</string>
+    <string name="cancelar">Cancel</string>
+    <string name="back">Back</string>
+    <string name="añadir">Add</string>
+    <string name="anhadirEntr">Add Training</string>
+    <string name="aceptar">Accept</string>
+    <string name="abierto">Open Water</string>
+    <string name="selectLang">Select Language</string>
+    <string name="spanish">Spanish</string>
+    <string-array name="languages" >
+        <item>@string/english</item>
+        <item>@string/spanish</item>
+    </string-array>
+    <string name="english">English</string>
+    <string name="deseaEliminar">Wich one for delete</string>
+    <string name="alertdialog">¿Sure you want to delete it?</string>
+    <string name="eIncompleto">Training incomplete</string>
+    <string name="incompleto">incomplete</string>
+    <string name="reintentar">Try Again</string>
+</resources>

@@ -1,3 +1,48 @@
 <resources>
     <string name="app_name">EntrenamientoMaterial</string>
+    <string name="anhadirEntr">Añadir entrenamiento</string>
+    <string name="title_activity_transition_add">Añadir Entrenamiento</string>
+    <string name="delete_button">Eliminar</string>
+    <string name="nombre_entre">Nombre Entr.</string>
+    <string name="fecha">Fecha...</string>
+    <string name="hmseg">horas/minutos/segundos</string>
+    <string name="horas">Horas</string>
+    <string name="minutos">Minutos</string>
+    <string name="segundos">Segundos</string>
+    <string name="distancia">Distancia</string>
+    <string name="kilometros">Kilometros</string>
+    <string name="metros">Metros</string>
+    <string name="piscinaGrande">Piscina grande</string>
+    <string name="piscinaMedia">Piscina media</string>
+    <string name="abierto">Aguas abiertas</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="entrenamientoNuevo">Entrenamiento Nuevo</string>
+    <string name="añadir">Añadir</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="estadisticas">Estadisticas</string>
+    <string name="configuracion">Configuracion</string>
+    <string name="estats">Estadisticas</string>
+    <string name="modificar">Modificar</string>
+    <string name="nEntrenamientos">Numero de Entrenamientos</string>
+    <string name="vMedia">Velocidad Media</string>
+    <string name="distTotal">Distancia total</string>
+    <string name="velocidadMedia">Tiempo Total</string>
+    <string name="incompleto">Incompleto</string>
+    <string name="eIncompleto">Entrenamiento incompleto</string>
+    <string name="reintentar">Reintentar</string>
+    <string name="alertdialog">¿Seguro que quieres borrar el elemento?</string>
+    <string name="deseaEliminar">¿Qué entrenamientos desea eliminar?</string>
+    <string name="back">Atrás</string>
+    <string name="nombre">Nombre</string>
+    <string name="edad">Edad</string>
+    <string name="nacionalidad">Nacionalidad</string>
+    <string name="changeNationality">Cambiar nacionalidad</string>
+    <string name="selectLang">Seleciona Idioma</string>
+    <string name="spanish">Spanish</string>
+    <string name="english">English</string>
+    <string-array name="languages" >
+        <item>@string/english</item>
+        <item>@string/spanish</item>
+    </string-array>
 </resources>

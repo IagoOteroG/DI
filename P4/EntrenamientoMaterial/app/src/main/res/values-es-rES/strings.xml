@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">EntrenamientoMaterial</string>
+    <string name="vMedia">Velocidad Media</string>
+    <string name="velocidadMedia">Tiempo Total</string>
+    <string name="title_activity_transition_add">Añadir Entrenamiento</string>
+    <string name="segundos">Segundos</string>
+    <string name="piscinaMedia">Piscina media</string>
+    <string name="piscinaGrande">Piscina grande</string>
+    <string name="nombre_entre">Nombre Entr.</string>
+    <string name="nombre">Nombre</string>
+    <string name="nEntrenamientos">Numero de Entrenamientos</string>
+    <string name="nacionalidad">Nacionalidad</string>
+    <string name="modificar">Modificar</string>
+    <string name="minutos">Minutos</string>
+    <string name="metros">Metros</string>
+    <string name="kilometros">Kilometros</string>
+    <string name="horas">Horas</string>
+    <string name="hmseg">horas/minutos/segundos</string>
+    <string name="fecha">Fecha...</string>
+    <string name="estats">Estadisticas</string>
+    <string name="estadisticas">Estadisticas</string>
+    <string name="entrenamientoNuevo">Entrenamiento Nuevo</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="edad">Edad</string>
+    <string name="distTotal">Distancia total</string>
+    <string name="distancia">Distancia</string>
+    <string name="delete_button">Eliminar</string>
+    <string name="configuracion">Configuracion</string>
+    <string name="changeNationality">Cambiar nacionalidad</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="back">Atrás</string>
+    <string name="añadir">Añadir</string>
+    <string name="anhadirEntr">Añadir</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="abierto">Aguas abiertas</string>
+    <string name="selectLang">Seleciona Idioma</string>
+    <string name="spanish">Español</string>
+    <string-array name="languages" >
+        <item>@string/english</item>
+        <item>@string/spanish</item>
+    </string-array>
+    <string name="english">Ingles</string>
+    <string name="deseaEliminar">¿Qué entrenamientos desea eliminar?</string>
+    <string name="alertdialog">¿Seguro que quieres borrar el elemento?</string>
+    <string name="eIncompleto">Entrenamiento incompleto</string>
+    <string name="incompleto">Incompleto</string>
+    <string name="reintentar">Reintentar</string>
+</resources>

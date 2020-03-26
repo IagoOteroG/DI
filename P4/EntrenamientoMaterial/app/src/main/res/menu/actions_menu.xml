@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="@string/eliminar"
+        android:id="@+id/opEliminar" />
+    <item android:title="@string/estadisticas"
+        android:id="@+id/opEstadisticas" />
+    <item android:title="@string/configuracion"
+        android:id="@+id/opConfiguracion" />
+    <item android:title="@string/añadir"
+        android:id="@+id/opAdd" />
+    <item android:title="@string/modificar"
+        android:id="@+id/opModificar" />
+</menu>
