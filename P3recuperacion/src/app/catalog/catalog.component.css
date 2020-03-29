@@ -1,0 +1,18 @@
+@media (min-width: 415px) {
+    footer {
+        position: fixed;
+        width: 100%;
+        background: rgb(242, 243, 245);
+        bottom: auto;
+    }
+}
+
+@media (min-width: 415px) {
+    .mat-card {
+        max-width: 400px;
+    }
+    .mat-grid-tile {
+        display: inline-table;
+        width: -moz-available;
+    }
+}

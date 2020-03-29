@@ -1,0 +1,59 @@
+<div class="container">
+    <form [formGroup]="form">
+        <mat-form-field>
+            <input matInput #name type="text" placeholder="Nombre" formControlName="name" required>
+            <label *ngIf="form.get('name').hasError('required')&&form.get('name').touched">
+        Obligatorio
+      </label>
+            <label *ngIf="form.get('name').hasError('maxLenght')&&form.get('name').touched">
+        Obligatorio
+      </label>
+            <label *ngIf="form.get('name').hasError('minLenght')&&form.get('name').touched">
+        Obligatorio
+      </label>
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput #apellido placeholder="Apellido" formControlName="apellido" required>
+            <label *ngIf="form.get('apellido').hasError('required')&&form.get('apellido').touched">
+        Obligatorio
+      </label>
+            <label *ngIf="form.get('apellido').hasError('maxLenght')&&form.get('apellido').touched">
+        Obligatorio
+      </label>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput #sapellido placeholder="Segundo Apellido">
+        </mat-form-field>
+        <mat-form-field>
+            <textarea matInput #textarea placeholder="Leave a comment" formControlName="comment" required></textarea>
+            <label *ngIf="form.get('comment').hasError('required')&&form.get('comment').touched">
+        Obligatorio
+      </label>
+            <label *ngIf="form.get('comment').hasError('maxLenght')&&form.get('comment').touched">
+        Obligatorio
+      </label>
+            <label *ngIf="form.get('comment').hasError('minLenght')&&form.get('comment').touched">
+        Obligatorio
+      </label>
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput #email placeholder="Email" formControlName="email" required>
+            <label *ngIf="form.get('email').hasError('email')&&form.get('email').touched">
+              Obligatorio
+            </label>
+            <label *ngIf="form.get('email').hasError('required')&&form.get('email').touched">
+              Obligatorio
+            </label>
+        </mat-form-field>
+        <div>
+            <form class="button" novalidate (ngSubmit)="onSubmit(name.value, apellido.value, sapellido.value, textarea.value, email.value)" [formGroup]="form">
+                <button mat-raised-button type="submit" [disabled]="form.invalid">Enviar</button>
+            </form>
+        </div>
+    </form>
+
+
+</div>
+<app-footer-s></app-footer-s>

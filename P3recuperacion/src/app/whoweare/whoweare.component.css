@@ -1,0 +1,56 @@
+.main {
+    background-color: moccasin;
+    background-image: url('background.jpg');
+    height: 150%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: auto;
+}
+
+.top {
+    text-align: center;
+    color: #fff;
+    font-family: Montserrat, sans-serif;
+    margin-bottom: 4px;
+    line-height: 1.1;
+    max-width: 1140px;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: initial;
+}
+
+.top h1 {
+    font-size: 2.571rem;
+    color: #fff;
+    position: relative
+}
+
+.top p {
+    line-height: 18px;
+    font-weight: 400;
+    color: #fff;
+    position: relative;
+}
+
+.carta {
+    padding: 15px;
+    margin-bottom: 3px;
+    background: #fff;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #888;
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    margin-right: 10%;
+    margin-left: 10%;
+    text-align: center;
+}
+
+.cuerpo {
+    margin-top: 5px;
+    margin-right: 10%;
+    margin-left: 10%;
+}

@@ -1,0 +1,46 @@
+.mat-grid-tile {
+    background-color: lightblue;
+}
+
+div {
+    margin-top: 1%;
+}
+
+.mapa {
+    margin-left: 5%;
+    width: 90%;
+}
+
+.mrd {
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    color: white;
+    margin-right: 9%;
+    margin-left: 9%;
+}
+
+.footer {
+    margin-top: 0px;
+}
+
+.mapa {
+    margin-left: 15%;
+    width: 70%;
+}
+
+.main {
+    background-color: moccasin;
+    background-image: url('background.jpg');
+    height: 150%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: auto;
+}
+
+.titulo {
+    margin-bottom: 4%;
+    color: white;
+    size: 15px;
+    text-align: center;
+}

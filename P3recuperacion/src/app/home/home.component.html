@@ -1,0 +1,49 @@
+<div class="main">
+    <div class="top">
+
+        <h1 class="titulo">Articulos</h1>
+
+    </div>
+    <mat-drawer-container>
+        <mat-drawer-content>
+            <div>
+                <mat-grid-list class="grid" cols="{{breakpoint}}" rowHeight="{{heigh}}" (window:resize)="onResize($event)">
+                    <div *ngFor="let articulo of articulos">
+                        <mat-grid-tile>
+                            <a class="art1" routerLink="/detalles/{{articulo.id}}">
+                                <table>
+                                    <tr>
+                                        <h4 class="tituloart"><strong>{{articulo.titulo}}</strong></h4>
+                                    </tr>
+                                    <tr>
+                                        <img class="img" src="{{articulo.imagen}}">
+                                    </tr>
+                                    <tr> <span>{{articulo.resumen}}</span></tr>
+                                </table>
+                            </a>
+                        </mat-grid-tile>
+                    </div>
+                </mat-grid-list>
+            </div>
+        </mat-drawer-content>
+        <mat-drawer class="side" mode="side" position="end" opened>
+            <div class="import" *ngFor="let artside of artside">
+                <a routerLink="/catalog">
+                    <table>
+                        <tr>
+                            <h6 class="titulo2">{{artside.titulo}}</h6>
+                        </tr>
+                        <tr>
+                            <img class="imgIm" src="{{artside.imagen}}">
+                        </tr>
+                    </table>
+                </a>
+            </div>
+        </mat-drawer>
+    </mat-drawer-container>
+    <div class="bttton">
+        <button mat-raised-button (click)="more()" class="bt1">></button>
+    </div>
+
+</div>
+<app-footer-s></app-footer-s>
