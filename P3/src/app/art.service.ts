@@ -1,21 +1,19 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import {Art} from './art';
-import {articulos} from './articulos';
+import {articulos} from './articulos-lista';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ArtService {
-
-
   constructor() { }
 
-  getNoticias(): Observable<Art[]>{
+  getArticulos(): Observable<Art[]>{
     return of(articulos);
   }
 
-  getNoticia(position: number){
-    return of(articulos.find(Art => Art.position === position));
+  getArticulo(id: number){
+    return of(articulos.find(Art => Art.id === id));
   }
 }

@@ -1,36 +1,49 @@
-<div class="mat-elevation-z8">
+<div class="main">
+    <div class="top">
 
-    <table mat-table [dataSource]="dataSource">
+        <h1 class="titulo">Articulos</h1>
 
+    </div>
+    <mat-drawer-container>
+        <mat-drawer-content>
+            <div>
+                <mat-grid-list class="grid" cols="{{breakpoint}}" rowHeight="{{heigh}}" (window:resize)="onResize($event)">
+                    <div *ngFor="let articulo of articulos">
+                        <mat-grid-tile>
+                            <a class="art1" routerLink="/detalles/{{articulo.id}}">
+                                <table>
+                                    <tr>
+                                        <h4 class="tituloart"><strong>{{articulo.titulo}}</strong></h4>
+                                    </tr>
+                                    <tr>
+                                        <img class="img" src="{{articulo.imagen}}">
+                                    </tr>
+                                    <tr> <span>{{articulo.resumen}}</span></tr>
+                                </table>
+                            </a>
+                        </mat-grid-tile>
+                    </div>
+                </mat-grid-list>
+            </div>
+        </mat-drawer-content>
+        <mat-drawer class="side" mode="side" position="end" opened>
+            <div class="import" *ngFor="let artside of artside">
+                <a routerLink="/catalog">
+                    <table>
+                        <tr>
+                            <h6 class="titulo2">{{artside.titulo}}</h6>
+                        </tr>
+                        <tr>
+                            <img class="imgIm" src="{{artside.imagen}}">
+                        </tr>
+                    </table>
+                </a>
+            </div>
+        </mat-drawer>
+    </mat-drawer-container>
+    <div class="bttton">
+        <button mat-raised-button (click)="more()" class="bt1">></button>
+    </div>
 
-        <!--- Note that these columns can be defined in any order.
-          The actual rendered columns are set as a property on the row definition" -->
-
-        <!-- Position Column -->
-        <ng-container matColumnDef="position">
-            <th mat-header-cell *matHeaderCellDef> No. Articulo </th>
-            <td mat-cell *matCellDef="let element"> {{element.position}} </td>
-        </ng-container>
-
-        <!-- Name Column -->
-        <ng-container matColumnDef="name">
-            <th mat-header-cell *matHeaderCellDef> Modelo </th>
-            <td mat-cell *matCellDef="let element"> {{element.name}} </td>
-        </ng-container>
-
-        <!-- Weight Column -->
-        <ng-container matColumnDef="weight">
-            <th mat-header-cell *matHeaderCellDef> Foto </th>
-            <td mat-cell *matCellDef="let element">
-                <img class="foto" src={{element.icon}}>
-            </td>
-        </ng-container>
-
-        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-
-    </table>
-
-    <mat-paginator [pageSizeOptions]="[5,10,20]" showFirstLastButtons></mat-paginator>
 </div>
 <app-footer-s></app-footer-s>

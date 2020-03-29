@@ -1,1 +1,39 @@
-<p>art-detail works!</p>
+<div class="main">
+    <h1 class="title1">{{articulo.titulo}}</h1>
+</div>
+<div>
+    <img src="{{articulo.imagen}}">
+</div>
+<p>{{articulo.articulo}}</p>
+<h2 class="titulo">Deja tu comentario</h2>
+<div class="comentario">
+    <table class="comentario">
+        <td>
+            <form novalidate [formGroup]="form">
+                <div class="input1">
+                    <mat-form-field>
+                        <input matInput #nombre type="text" formControlName="nombre" placeholder="¿Nombre?" class="input">
+                    </mat-form-field>
+                </div>
+                <div class="input2">
+                    <mat-form-field>
+                        <textarea matInput #comentario type="text" formControlName="comentario" placeholder="Comentario" class="input">
+                </textarea> </mat-form-field>
+                </div>
+            </form>
+            <div class="boton">
+                <form novalidate (ngSubmit)="submit(nombre.value, comentario.value)" [formGroup]="form">
+                    <button mat-raised-button type="submit" [disabled]="form.invalid">Enviar</button>
+                </form>
+            </div>
+        </td>
+    </table>
+</div>
+<div class="coments" *ngFor="let comentario of comentarios">
+    <table class="tablaComents">
+        <td>
+            <p>{{comentario.comentario}}</p>
+            <p>Proporcionado por: {{comentario.nombre}}</p>
+        </td>
+    </table>
+</div>

@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { contactMessage } from './contactMessage';
+import { mensajes } from './message-list';
 
 @Injectable({
   providedIn: 'root'
@@ -10,10 +11,8 @@ export class ServiceComponentContactusService {
 
   add(contac: contactMessage) {
 
-    var contactmessage = "name:|" + contac.name + "|apellido|" + contac.apellido + "|sapellido|" + contac.sapellido + "|textarea|" + contac.textarea + "|email|" + contac.email;
-
-    this.contacts.push(contactmessage);
-    console.log(this.contacts);
+   mensajes.push(contac);
+    console.log(mensajes);
   }
 
   clear() {

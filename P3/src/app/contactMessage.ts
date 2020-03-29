@@ -4,7 +4,4 @@ export class contactMessage {
      sapellido: string;
      textarea: string; 
      email: string;
-
-     
-
 }

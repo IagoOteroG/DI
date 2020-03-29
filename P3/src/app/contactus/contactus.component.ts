@@ -11,7 +11,9 @@ import {ServiceComponentContactusService} from '../service-component-contactus.s
 export class ContactusComponent implements OnInit {
 
 
-  constructor(private contactUs: ServiceComponentContactusService ) { }
+  constructor(private contactUs: ServiceComponentContactusService ) { 
+    
+  }
   form: FormGroup;
   ngOnInit() {
     this.form = new FormGroup({
@@ -24,12 +26,9 @@ export class ContactusComponent implements OnInit {
   }
   onSubmit(name: string, apellido: string, sapellido: string, textarea: string, email: string) {
 
-    
     this.contactUs.add({name,apellido,sapellido,textarea,email} as contactMessage);
-   
 
     this.form.reset("");
     
   }
-
 }

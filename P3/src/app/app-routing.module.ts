@@ -5,6 +5,7 @@ import { ContactusComponent } from './contactus/contactus.component';
 import { WhereweareComponent } from './whereweare/whereweare.component';
 import { WhoweareComponent } from './whoweare/whoweare.component';
 import { CatalogComponent } from './catalog/catalog.component';
+import { ArtDetailComponent } from './art-detail/art-detail.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -12,7 +13,8 @@ const routes: Routes = [
   { path: 'whoweare', component: WhoweareComponent  },
   { path: 'whereweare', component: WhereweareComponent  },
   { path: 'contactus', component: ContactusComponent  },
-  { path: 'home', component: HomeComponent  }
+  { path: 'home', component: HomeComponent  },
+  { path: 'detalles/:id', component: ArtDetailComponent  }
 ];
 
 @NgModule({

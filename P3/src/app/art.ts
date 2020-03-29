@@ -1,6 +1,7 @@
-export class Art {
-    name: string;
-  position: number;
-  weight: number;
-  icon: string;
+export class Art{
+  id: number;
+  imagen: string;
+  titulo: string;
+  resumen: string;
+  articulo: string;
 }

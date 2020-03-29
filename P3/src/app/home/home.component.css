@@ -1,17 +1,101 @@
-table {
-    width: 100%;
+.main {
+    background-image: url('background.jpg');
+    padding-top: 12%;
 }
 
-@media (min-width: 415px) {
-    table {
-        width: 40%;
-        margin-left: 30%;
+.art1 {
+    text-align: center;
+    padding: 13%;
+}
+
+img {
+    width: 80%;
+    padding: 2%;
+}
+
+.titulo {
+    text-align: center;
+    margin-top: -10%;
+    margin-bottom: 2%;
+    color: white;
+}
+
+.tituloart {
+    font-size: 130%;
+    text-decoration: none;
+}
+
+span {
+    font-size: 100%;
+}
+
+.bt1 {
+    border-radius: 100%;
+    background-color: rgba(163, 163, 163, 0.904);
+    border: none;
+    color: white;
+    padding: 1%;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 2px;
+    cursor: pointer;
+}
+
+.bttton {
+    text-align: right;
+    margin-right: 23%;
+}
+
+.side {
+    margin-right: 2%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    width: 17%;
+    align-content: center;
+}
+
+.import a {
+    text-align: center;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 5%;
+}
+
+.import img {
+    width: 70%;
+}
+
+.boton {
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+h6 {
+    margin: 2%;
+}
+
+@media (max-width: 1150px) {
+    .side {
+        width: 20%;
+    }
+    h6 {
+        font-size: 80%;
     }
 }
 
 @media (max-width: 415px) {
-    .foto {
-        width: 104px;
-        height: 142px;
+    .side {
+        width: 30%;
+    }
+    .titulo2 {
+        font-size: 70%;
+    }
+    h5 {
+        font-size: 100%;
+    }
+    .art1 {
+        text-align: center;
+        padding: 16%;
     }
 }

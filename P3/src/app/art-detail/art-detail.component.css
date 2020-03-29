@@ -1,0 +1,126 @@
+h1 {
+    text-align: center;
+    margin: 1%;
+}
+
+.title1 {
+    color: white;
+}
+
+.main {
+    background-color: moccasin;
+    background-image: url('background.jpg');
+    height: 150%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: auto;
+}
+
+.ng-untouched {
+    text-align: left;
+}
+
+.titulo {
+    margin-left: 46%;
+}
+
+.comentario {
+    margin-left: 20%;
+    text-align: center;
+}
+
+.ng-invalid {
+    text-align: left;
+}
+
+.ng-touched {
+    text-align: left;
+}
+
+img {
+    width: 30%;
+    height: 50%;
+}
+
+p {
+    text-align: center;
+    padding: 2%;
+}
+
+div {
+    text-align: center;
+}
+
+mat-form-field {
+    width: 250%;
+}
+
+.comentario h2 {
+    margin-bottom: 2%;
+}
+
+.coments {
+    margin-left: 38%;
+    margin-bottom: 4%;
+}
+
+.tablaComents {
+    margin-left: 10%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.tabla2 p {
+    padding: 0;
+}
+
+@media (max-width: 1150px) {
+    .tabla1 {
+        margin-left: 2%;
+    }
+    mat-form-field {
+        width: 250%;
+    }
+    .comentario {
+        margin-left: 12%;
+    }
+    .titulo {
+        margin-left: 32%;
+    }
+}
+
+@media (max-width: 415px) {
+    .tabla1 {
+        margin-left: 0;
+    }
+    .tabla1 img {
+        width: 70%;
+    }
+    .tabla1 td {
+        width: 5%;
+    }
+    mat-form-field {
+        width: 75%;
+    }
+    .tabla2 {
+        margin-left: 1%;
+        margin-right: 2%;
+    }
+    .tabla2 img {
+        width: 80px;
+        padding-right: 15%;
+    }
+    .tabla2 h5 {
+        font-size: 100%;
+    }
+    .titulo {
+        margin-left: 23%;
+    }
+    .comentario {
+        margin-left: 12%;
+    }
+    .coments {
+        margin-left: 11%;
+    }
+}
